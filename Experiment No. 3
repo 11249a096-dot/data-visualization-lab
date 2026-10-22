@@ -1,0 +1,50 @@
+//Aim
+To create and understand different basic graphs and visualizations using R programming.
+
+//Algorithm
+1. Create the required R vectors.
+2. Select a suitable visualization function.
+3. Pass the data to the graph function.
+4. Add title and axis labels.
+5. Execute the R program.
+6. Observe and interpret the graph.
+
+/Program 1: Line Graph
+
+x <- c(1, 2, 3, 4, 5)
+y <- c(10, 15, 12, 18, 20)
+plot(x, y, type="o",
+main="Line Graph",
+xlab="X Values",
+ylab="Y Values")
+
+/Program 2: Bar Chart
+
+subjects <- c("Python", "Java", "R", "Tableau", "SQL")
+marks <- c(85, 78, 82, 90, 88)
+barplot(marks,
+names.arg=subjects,
+main="Marks by Subject",
+xlab="Subject",
+ylab="Marks")
+
+/Program 3: Pie Chart
+
+values <- c(35, 25, 20, 20)
+ labels <- c("Python", "Java", "R", "Tableau")
+ pie(values,
+ labels=labels,
+ main="Technology Usage")
+
+/Program 4: Scatter Plot
+
+hours <- c(1, 2, 3, 4, 5, 6)
+ marks <- c(45, 50, 58, 65, 72, 80)
+
+ plot(hours, marks,
+ main="Study Hours vs Marks",
+ xlab="Study Hours",
+ ylab="Marks",
+ pch=19)
+
+
