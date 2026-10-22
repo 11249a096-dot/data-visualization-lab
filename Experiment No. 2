@@ -1,0 +1,23 @@
+//Aim
+To create and understand different basic graphs and visualizations using Python and the Matplotlib
+library.//
+
+//Algorithm
+1. Import the required Matplotlib module.
+2. Prepare suitable data.
+3. Select a visualization according to the purpose of the analysis.
+4. Create the graph.
+5. Add title and axis labels.
+6. Display the visualization.
+7. Interpret the result.//
+
+import matplotlib.pyplot as plt
+x = [1, 2, 3, 4, 5]
+ y = [10, 15, 12, 18, 20]
+ plt.plot(x, y, marker="o", label="Values")
+ plt.title("Line Chart")
+ plt.xlabel("X Values")
+ plt.ylabel("Y Values")
+ plt.legend()
+ plt.grid(True)
+ plt.show()
