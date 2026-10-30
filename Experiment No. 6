@@ -1,0 +1,38 @@
+//Aim
+To perform data aggregation and apply statistical functions in Tableau for better data analysis.
+
+//Algorithm
+1. Open Tableau Public.
+2. Connect to the dataset.
+3. Drag required fields into rows and columns.
+4. Apply aggregation functions.
+5. Use statistical measures.
+6. Analyze and save the results.
+
+Program
+1 import pandas as pd
+2
+3 # Load dataset
+4 data = pd.read_csv("sales_data.csv")
+5
+6 # Total Sales
+7 print("Total Sales:", data["Sales"].sum())
+8
+9 # Average Sales
+10 print("Average Sales:", data["Sales"].mean())
+11
+12 # Minimum Sales
+13 print("Minimum Sales:", data["Sales"].min())
+14
+15 # Maximum Sales
+16 print("Maximum Sales:", data["Sales"].max())
+18 # Group by Category
+19 print("\nSales by Category:")
+20 print(data.groupby("Category")["Sales"].sum())
+
+//Sample Output
+The output displays total sales, average sales, minimum sales, maximum sales and sales grouped
+by category.
+
+Result
+Thus, data aggregation and statistical analysis were successfully performed using Tableau.
