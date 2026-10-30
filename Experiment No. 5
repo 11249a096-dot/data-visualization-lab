@@ -1,0 +1,40 @@
+//Aim
+To connect Tableau to a data source and prepare the data for creating visualizations.
+
+//Algorithm
+1. Open Tableau Public.
+2. Select the required data source.
+3. Import the dataset.
+4. Verify the imported data.
+5. Perform basic data preparation.
+6. Save the workbook.
+
+Program
+1 import pandas as pd
+2
+3 # Load dataset
+4 data = pd.read_csv("sales_data.csv")
+5
+6 # Display first 5 rows
+7 print(data.head())
+8
+9 # Check for missing values
+10 print(data.isnull().sum())
+11
+12 # Remove duplicate records
+13 data = data.drop_duplicates()
+14
+15 # Convert Sales column to numeric
+16 data["Sales"] = pd.to_numeric(data["Sales"])
+18 # Save cleaned dataset
+19 data.to_csv("cleaned_sales_data.csv", index=False)
+20
+21 print("Data prepared successfully.")
+
+//Sample Output
+The output displays the first five rows, missing-value counts and a confirmation that the cleaned
+dataset was saved successfully.
+
+//Result
+Thus, the dataset was successfully connected, cleaned, and prepared for visualization using
+Tableau.
